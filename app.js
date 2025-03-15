@@ -20,11 +20,11 @@ function generarImagen() {
 
         document.fonts.load("30px Poppins").then(() => {
             ctx.fillStyle = "black";
-            ctx.font = "bold 80px Poppins";
+            ctx.font = "bold 150px Poppins";
             ctx.textAlign = "center";
 
-            const margenInferior = 30;
-            ctx.fillText(`ID: ${id}`, canvas.width / 2, canvas.height - margenInferior);
+            const margenInferior = 200;
+            ctx.fillText(`ID: ${id}`, canvas.width / 4, canvas.height - margenInferior);
 
             const image = canvas.toDataURL("image/png");
             const link = document.createElement("a");
