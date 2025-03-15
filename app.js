@@ -1,9 +1,10 @@
 function generarImagen() {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
+    const imagenSeleccionada = document.getElementById("imagenSeleccionada").value;
 
     const fondo = new Image();
-    fondo.src = "img/fondo.png";
+    fondo.src = imagenSeleccionada;
 
     fondo.onload = function () {
 
